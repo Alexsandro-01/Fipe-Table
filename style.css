@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(21, 32, 43);
+  color: rgb(186, 186, 187);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#container {
+  border: solid white;
+  padding: 20px;
+}
+
+.category {
+  background-color: #1d2551;
+}
+
+.title-category {
+  text-align: center;
+  padding: 20px;
+}
+
+.container-select {
+  border: ;
+}
