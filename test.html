@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,62 @@
   <style>
     div {
       background-color: aquamarine;
-      padding: 10px;
+      padding: 5px;
     }
 
     ol {
-      display: none;
-      height: 0;
+      /* display: none; */
+      height: 0px;
       transition: ease 1s;
+    }
+
+    .droped {
+      /* display: block; */
+      height: 100px;
+      transition: 1s;
     }
   </style>
 </head>
+
 <body>
   <section>
     <div>click</div>
-    <ol>
-      <li>abdds</li>
-      <li>abdds</li>
-      <li>abdds</li>
-      <li>abdds</li>
-      <li>abdds</li>
-      <li>abdds</li>
+    <ol class="drop">
+
     </ol>
   </section>
 
   <script>
+    const arr = [
+      'abcd',
+      'abcd',
+      'abcd',
+      'abcd',
+      'abcd',
+    ]
+    function elem(ol) {
+
+      arr.forEach((value) => {
+        const li = document.createElement('li');
+        li.innerText = value;
+        ol.appendChild(li);
+      })
+
+    }
     const div = document.querySelector('div');
     div.addEventListener('click', click);
     function click() {
       const clk = document.querySelector('ol');
-
-      clk.style.display = 'block'
-      clk.style.height = '200px'
-      // clk.style.transition = '0.9s'
+      // console.log(clk.classList.contains('drop'))
+      clk.classList.toggle('droped')
+      // if (clk.classList.contains('droped')) {
+      //   elem(clk);
+      // } else {
+      //   // clk.style.height = '0'
+      //   // clk.style.display = 'none'
+      // }
     }
-   </script>
+  </script>
 </body>
+
 </html>

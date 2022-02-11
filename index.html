@@ -18,10 +18,12 @@
 </head>
 <body>
   <main>
-    <section id="container" >
+    <!-- <section id="container" > -->
       <section class="category" id="carros">
         <div class="veiculo-legend">
-          <h2 class="title-category">Consultar Carros</h2>
+          <i class="fas fa-car-side fa-lg"></i>
+          <h2 class="title-category">Carros</h2>
+          <i class="fas fa-caret-down category-drop"></i>
         </div>
         <div class="search">
           <p>
@@ -30,36 +32,105 @@
           </p>
           <div class="container-select">
             <div class="chosen">
-              <span>Selecione a Marca do veículo</span>
+              <input type="text" disabled id="select-marca-carro"  placeholder="Selecione a marca do veículo">
             </div>
             <div class="drop-chosen">
-              <div>
+              <div class="container-input">
                 <input type="text" class="search-chosen">
                 <i class="fas fa-search"></i>
               </div>
-              <ul class="results-for-chosen">
-                <li>marca de carros</li>
-                <li>marca de carros</li>
-                <li>marca de carros</li>
-                <li>marca de carros</li>
-                <li>marca de carros</li>
-                <li>marca de carros</li>
-              </ul>
+              <div class="container-results-for-chosen">
+                <ul class="results-for-chosen-carros">
+                  <li class="chosen-model">auto</li>
+                  <li class="chosen-model">auto2</li>
+                  <li class="chosen-model">auto3</li>
+                  <li class="chosen-model">auto4</li>
+                  <li class="chosen-model">auto5</li>
+                  <li class="chosen-model">auto6</li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div id="container-btn">
+            <button>Search</button>
           </div>
         </div>
       </section>
       <section class="category" id="caminhoes">
         <div class="veiculo-legend">
-          <h2 class="title-category">Consultar Caminhoes e Micro-ônibus</h2>
+          <i class="fas fa-truck fa-lg"></i>
+          <h2 class="title-category">Caminhoes e Micro-ônibus</h2>
+          <i class="fas fa-caret-down category-drop"></i>
+        </div>
+        <div class="search">
+          <p>
+            Informe primeiro a <strong>marca do veículo</strong> e depois o <strong>modelo</strong> e o <strong>ano do modelo</strong>.
+            Você também pode digitar a informação no campo "busca", dentro de cada opção do formulário da pesquisa.
+          </p>
+          <div class="container-select">
+            <div class="chosen">
+              <input type="text" disabled id="select-marca-caminhao"  placeholder="Selecione a marca do veículo">
+            </div>
+            <div class="drop-chosen">
+              <div class="container-input">
+                <input type="text" class="search-chosen">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="container-results-for-chosen">
+                <ul class="results-for-chosen-caminhao">
+                  <li class="chosen-model">auto</li>
+                  <li class="chosen-model">auto2</li>
+                  <li class="chosen-model">auto3</li>
+                  <li class="chosen-model">auto4</li>
+                  <li class="chosen-model">auto5</li>
+                  <li class="chosen-model">auto6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="container-btn">
+            <button>Search</button>
+          </div>
         </div>
       </section>
       <section class="category" id="motos">
         <div class="veiculo-legend">
-          <h2 class="title-category">Consultar Motos</h2>
+          <i class="fas fa-motorcycle fa-lg"></i>
+          <h2 class="title-category">Motos</h2>
+          <i class="fas fa-caret-down  category-drop"></i>
+        </div>
+        <div class="search">
+          <p>
+            Informe primeiro a <strong>marca do veículo</strong> e depois o <strong>modelo</strong> e o <strong>ano do modelo</strong>.
+            Você também pode digitar a informação no campo "busca", dentro de cada opção do formulário da pesquisa.
+          </p>
+          <div class="container-select">
+            <div class="chosen">
+              <input type="text" disabled id="select-marca-moto"  placeholder="Selecione a marca do veículo">
+            </div>
+            <div class="drop-chosen">
+              <div class="container-input">
+                <input type="text" class="search-chosen">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="container-results-for-chosen">
+                <ul class="results-for-chosen-moto">
+                  <li class="chosen-model">auto</li>
+                  <li class="chosen-model">auto2</li>
+                  <li class="chosen-model">auto3</li>
+                  <li class="chosen-model">auto4</li>
+                  <li class="chosen-model">auto5</li>
+                  <li class="chosen-model">auto6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="container-btn">
+            <button>Search</button>
+          </div>
         </div>
       </section>
-    </section>
+    <!-- </section> -->
   </main>
 </body>
 </html>
