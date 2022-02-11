@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background-color: aquamarine;
+      padding: 10px;
+    }
+
+    ol {
+      display: none;
+      height: 0;
+      transition: ease 1s;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>click</div>
+    <ol>
+      <li>abdds</li>
+      <li>abdds</li>
+      <li>abdds</li>
+      <li>abdds</li>
+      <li>abdds</li>
+      <li>abdds</li>
+    </ol>
+  </section>
+
+  <script>
+    const div = document.querySelector('div');
+    div.addEventListener('click', click);
+    function click() {
+      const clk = document.querySelector('ol');
+
+      clk.style.display = 'block'
+      clk.style.height = '200px'
+      // clk.style.transition = '0.9s'
+    }
+   </script>
+</body>
+</html>
