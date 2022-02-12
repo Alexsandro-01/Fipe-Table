@@ -32,7 +32,7 @@ body {
 .category {
   border: solid 1px var(--lightGray);
   padding: 5px 15px;
-  margin: 20px;
+  margin: 20px; 
   border: solid 1px var(--white);
   border-radius: 5px;
 }
@@ -58,7 +58,7 @@ div.veiculo-legend {
   align-items: center;
   justify-content: space-between;
   color: var(--yelow);
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .title-category {
@@ -125,7 +125,7 @@ div.container-results-for-chosen {
   overflow: auto;
 }
 
-ul.results-for-chosen-carros {
+ul.results-for-chosen-carro {
   list-style: none;
   padding: 5px;
 }

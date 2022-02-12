@@ -1,13 +1,16 @@
 const CHOICES = document.querySelectorAll('.chosen');
 const CATEGORYS = document.querySelectorAll('.category-drop');
 
-function print(arg) {
-  console.log(arg);
+function print(...arg) {
+  console.log(...arg);
 }
 
 // Drop veicle type
 CATEGORYS.forEach((category) => {
-  category.addEventListener('click', () => {
+  category.addEventListener('click', (event) => {
+    const veicle = event.target.parentElement.parentElement.id;
+    // print(veicle);
+    baseUrl(veicle);
     const section = category.parentElement.parentElement;
     section.lastElementChild.classList.toggle('search-droped')
   })
@@ -18,6 +21,6 @@ CHOICES.forEach((choice) => {
   choice.addEventListener('click', (e) => {
     const drop = e.target.parentElement.nextElementSibling;
     drop.classList.toggle('droped');
-    print()
+    // print()
   })
 })
