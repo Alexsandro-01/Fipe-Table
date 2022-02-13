@@ -13,13 +13,12 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
   <script defer src="drop.js"></script>
   <script defer src="fetch.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <main>
-    <!-- <section id="container" > -->
       <section class="category" id="carros">
         <div class="veiculo-legend">
           <i class="fas fa-car-side fa-lg"></i>
@@ -129,12 +128,50 @@
               </div>
             </div>
           </div>
+          <div class="container-select">
+            <div class="chosen">
+              <input type="text" disabled id="select-year-motos"  placeholder="Selecione a marca do veículo">
+            </div>
+            <div class="drop-chosen">
+              <div class="container-input">
+                <input type="text" class="search-chosen">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="container-results-for-chosen">
+                <ul class="results-for-chosen-year-motos">
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
           <div id="container-btn">
             <button>Search</button>
           </div>
         </div>
       </section>
-    <!-- </section> -->
+
+      <!-- <section class="result">
+        <table>
+          <tbody>
+            <tr>
+              <td>Mês de referencia:</td>
+              <td>Fevereiro 2022</td>
+            </tr>
+            <tr>
+              <td>Mês de referencia:</td>
+              <td>Fevereiro 2022</td>
+            </tr>
+            <tr>
+              <td>Mês de referencia:</td>
+              <td>Fevereiro 2022</td>
+            </tr>
+            <tr>
+              <td>Mês de referencia:</td>
+              <td>Fevereiro 2022</td>
+            </tr>
+          </tbody>
+          </table>
+      </section> -->
   </main>
 </body>
 </html>

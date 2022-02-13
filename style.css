@@ -155,3 +155,20 @@ button {
   color: var(--white);
   cursor: pointer;
 }
+
+section.result {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px var(--yelow);
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 10px 5px;
+  border-bottom: solid 2px var(--yelow);
+  color: var(--white);
+}
