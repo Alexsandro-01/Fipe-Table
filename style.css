@@ -161,6 +161,7 @@ section.result {
   padding: 20px;
   border-radius: 5px;
   border: solid 1px var(--yelow);
+  background-color: #222;
 }
 
 table {
