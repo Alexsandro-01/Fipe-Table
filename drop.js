@@ -20,14 +20,15 @@ function removeDropActive(arrElem, excession, classElem) {
 CATEGORYS_BTN.forEach((categoryBtn) => {
   categoryBtn.addEventListener('click', (event) => {
     const veicle = event.target.parentElement.parentElement.id;
-    // print(veicle);
-    baseUrl(veicle);
     const section = categoryBtn.parentElement.parentElement;
+    section.lastElementChild.classList.contains('search-droped') ? false : baseUrl(veicle);
+    
     removeDropActive(CATEGORYS, section.lastElementChild, 'search-droped');
     section.lastElementChild.classList.toggle('search-droped')
   })
 })
 
+// Drop choices veicles
 function removeDropActiveChosens(excession, classElem) {
   DROP_CHOSEN.forEach((chosen) => {
     if (chosen !== excession) {
@@ -36,7 +37,6 @@ function removeDropActiveChosens(excession, classElem) {
   })
 }
 
-// Drop choices veicles
 CHOICES.forEach((choice) => {
   choice.addEventListener('click', (e) => {
     const drop = e.target.parentElement.nextElementSibling;

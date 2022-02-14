@@ -25,10 +25,6 @@ body {
   font-size: 18px;
 }
 
-#container {
-  padding: 20px;
-}
-
 .category {
   border: solid 1px var(--lightGray);
   padding: 5px 15px;
@@ -158,7 +154,7 @@ button {
 }
 
 section.result {
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
   border: solid 1px var(--yelow);
