@@ -6,7 +6,7 @@
   --lightGray: #666;
   --darkGray: #222;
   --lightSmoke: #999;
-  --yelow: #fea418;
+  --yelow: #fea618d5;
 }
 
 * {
@@ -35,6 +35,7 @@ body {
   margin: 20px; 
   border: solid 1px var(--white);
   border-radius: 5px;
+  /* overflow: auto; */
 }
 
 .category-drop {
@@ -45,12 +46,12 @@ body {
 div.search {
   overflow: auto;
   height: 0;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 
 div.search-droped {
   height: 550px;
-  transition: 1s ease;
+  transition: 0.7s ease;
 }
 
 div.veiculo-legend {
@@ -91,13 +92,13 @@ div.drop-chosen {
   /* display: none; */
   height: 0;
   overflow: auto;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 
 div.droped {
   /* display: block; */
   height: 200px;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 div.drop-chosen div.container-input {
@@ -162,6 +163,16 @@ section.result {
   border-radius: 5px;
   border: solid 1px var(--yelow);
   background-color: #222;
+}
+
+section.result a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--yelow);
 }
 
 table {

@@ -5,7 +5,7 @@ const baseUrl = async (veicleType) => {
     const data = await response.json();
     addElement(data, veicleType);
   } catch (error) {
-    print(error)   ; 
+    print(error); 
   }
 }
 
@@ -29,11 +29,11 @@ const yearVeicle = async (codeVeicle, veicle, marcaVeicle) => {
   addElement(data, `year-${veicle}`, codeVeicle);
 }
 
-const tablePrice = async () => {
+const tablePrice = async (event) => {
   const url = `https://parallelum.com.br/fipe/api/v1/${VEICLE.veicleType}/marcas/${VEICLE.codeVeicle}/modelos/${VEICLE.modelVeicle}/anos/${VEICLE.yearVeicle}`;
   const response = await fetch(url);
   const data = await response.json();
-  resultTable(data);
+  resultTable(data, event.target);
 }
 
 // module.exports = tablePrice;

@@ -64,18 +64,22 @@ function addElement(arr, veicleClass, codeVeicle) {
   addListener('.chosen-model');
 }
 
-function resultTable(obj) {
-  const main = S('main');
+function resultTable(obj, btn) {
+  const categoryContainer = btn.parentElement.parentElement;
   let section = S('.result');
 
   if (section) {
-    section.innerHTML = '';
+    section.remove();
   } {
     section = elem('section')
     section.className = 'result';
   }
   const table = elem('table');
   const tbody = elem('tbody');
+  const a = elem('a');
+  a.href = '#';
+  a.id = 'result';
+  a.innerText = 'Resultado';
 
   const arr = Object.entries(obj)
   arr.pop();
@@ -94,8 +98,13 @@ function resultTable(obj) {
     table.appendChild(tbody);
   });
 
+  section.appendChild(a);
   section.appendChild(table);
-  main.appendChild(section);
+  // categoryContainer.style.height = '900px';
+  categoryContainer.appendChild(section);
+
+  removeDropActiveChosens(false, 'droped');
+  window.location.href = '#result';
 }
 
 const btns = document.querySelectorAll('button');
