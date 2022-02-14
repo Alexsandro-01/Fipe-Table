@@ -153,7 +153,7 @@ button {
   cursor: pointer;
 }
 
-section.result {
+section#result {
   margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
@@ -161,7 +161,7 @@ section.result {
   background-color: #222;
 }
 
-section.result a {
+section#result a {
   display: block;
   padding: 10px;
   text-align: center;

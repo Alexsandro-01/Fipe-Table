@@ -66,19 +66,19 @@ function addElement(arr, veicleClass, codeVeicle) {
 
 function resultTable(obj, btn) {
   const categoryContainer = btn.parentElement.parentElement;
-  let section = S('.result');
+  let section = S('#result');
 
   if (section) {
     section.remove();
   } {
     section = elem('section')
-    section.className = 'result';
+    section.id = 'result';
   }
   const table = elem('table');
   const tbody = elem('tbody');
   const a = elem('a');
-  a.href = '#';
-  a.id = 'result';
+  a.href = '#result';
+  // a.id = 'result';
   a.innerText = 'Resultado';
 
   const arr = Object.entries(obj)
@@ -104,10 +104,10 @@ function resultTable(obj, btn) {
   categoryContainer.appendChild(section);
 
   removeDropActiveChosens(false, 'droped');
-  window.location.href = '#result';
+  scrollResultToTop();
 }
 
-const btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll(".submit");
 btns.forEach((btn) => {
   btn.addEventListener('click', tablePrice);
 });
